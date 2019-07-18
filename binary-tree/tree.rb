@@ -14,4 +14,12 @@ class Tree
 			@root = node
 		end
 	end
+
+	def traverse
+		@root.visit
+	end
+
+	def search(val)
+		@root.search(val)
+	end
 end

@@ -22,4 +22,24 @@ class Node
 		end
 	end
 
+	def visit
+		if(@left) then
+			@left.visit
+		end
+		puts @value
+		if(@right) then
+			@right.visit
+		end
+	end
+
+	def search(val)
+		if @value == val then
+			p self
+		end
+		if(val < @value && @left) then
+			@left.search(val)
+		elsif(val > @value && @right) then
+			@right.search(val)
+		end
+	end
 end
