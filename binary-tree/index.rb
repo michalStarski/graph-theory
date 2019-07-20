@@ -1,5 +1,6 @@
 require_relative('./node')
 require_relative('./tree')
+require 'ap'
 
 tree = Tree.new
 prng = Random.new
@@ -11,3 +12,5 @@ prng = Random.new
 #Example usage
 tree.traverse
 tree.search(4)
+
+ap(tree.inspect)
