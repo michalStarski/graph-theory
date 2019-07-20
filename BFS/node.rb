@@ -7,7 +7,7 @@ class Node
 	end
 	attr_accessor :value, :edges, :checked, :parent
 
-	def addEdge(node)
+	def add_edge(node)
 		if @edges.include? node
 			return -1
 		end
